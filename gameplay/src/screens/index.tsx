@@ -4,7 +4,8 @@ import { View, Text, Image, StatusBar } from "react-native"
 
 /* Custon */
 import { styles } from './styles'
-import { ButtonIcon } from '../components/buttonIcon' 
+import { ButtonIcon } from '../components/buttonIcon'
+ 
 /* Assets */
 import Illustration from '../assets/illustration.png' 
 
@@ -27,9 +28,9 @@ export function Sign() {
 
       <View style= { styles.content }>
         <Text style={styles.title} >  
-          Organize {`\n`}
-          suas jogatinas {`\n`}
-          facilmente
+          Conect-se {'\n'}
+          e organize suas {'\n'}
+          jogatinas
         </Text>
 
         <Text style={styles.subtitle}>
