@@ -12,7 +12,8 @@ export const styles = StyleSheet.create({
     borderRadius: 8,
     flexDirection: 'row',
     alignItems: 'center',
-    marginBottom: 25,
+    marginBottom: 40,
+    marginTop: -45,
   },
   iconWrapper: {
     width: 56,

@@ -1,4 +1,8 @@
+/* Base */
 import React from 'react';
+import { StatusBar } from 'react-native';
+
+import AppLoading from 'expo-app-loading'
 import { useFonts } from 'expo-font'
 import { 
   Inter_400Regular, 
@@ -11,7 +15,7 @@ import {
 from '@expo-google-fonts/rajdhani'
 
 /* Custon */
-import { Sign } from './src/screens/index'
+import { Routes } from './src/routes'
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -22,11 +26,20 @@ export default function App() {
   })
 
   if(!fontsLoaded){
-    
+    return <AppLoading />
   }
 
   return (
-    <Sign />
+    <>
+      <StatusBar 
+          barStyle="light-content" 
+          backgroundColor="transparent"
+          translucent
+      />
+
+      <Routes />
+      
+    </>
   );
 }
 
