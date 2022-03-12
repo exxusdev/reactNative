@@ -15,10 +15,6 @@ import Illustration from '../../assets/illustration.png'
 export function SignIn() {
   const navigation = useNavigation() 
 
-  function handleSignIn () {
-    navigation.navigate('HomePage');
-  }
-
   const [text, setText] = useState('')
 
   return (
@@ -44,7 +40,7 @@ export function SignIn() {
 
         <ButtonIcon 
           title='Entrar com Discord'
-          onPress= { handleSignIn }
+          onPress= { () => { navigation.navigate() } }
         />
 
       </View>

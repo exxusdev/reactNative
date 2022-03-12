@@ -13,8 +13,8 @@ import { CategorySelect } from '../../components/categorySelect'
 export function HomePage() {
   const [ category, setCategory ] = useState('')
 
-  function handleCategorySelect( categoryID: string ) {
-    categoryID === category ? setCategory('') : setCategory( categoryID )
+  function handleCategorySelect( categoryId: string ) {
+    categoryId === category ? setCategory('') : setCategory( categoryId )
   }
 
   return (
