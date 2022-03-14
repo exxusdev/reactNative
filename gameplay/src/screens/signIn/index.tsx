@@ -5,7 +5,7 @@ import { useNavigation } from '@react-navigation/native'
 
 /* Custon */
 import { styles } from './styles'
-
+import { Routes } from '../../routes/index'
 /* Conponents */
 import { ButtonIcon } from '../../components/buttonIcon'
  
@@ -14,8 +14,6 @@ import Illustration from '../../assets/illustration.png'
 
 export function SignIn() {
   const navigation = useNavigation() 
-
-  const [text, setText] = useState('')
 
   return (
     <View style= { styles.container }>
@@ -40,7 +38,7 @@ export function SignIn() {
 
         <ButtonIcon 
           title='Entrar com Discord'
-          onPress= { () => { navigation.navigate() } }
+          onPress= { () => { navigation.navigate('HomePage' as never) } }
         />
 
       </View>

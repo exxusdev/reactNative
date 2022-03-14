@@ -6,19 +6,20 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack'
 /* Custons */
 import { HomePage } from '../screens/home'
 import { SignIn } from '../screens/signIn'
-import { setStatusBarTranslucent } from "expo-status-bar";
 
 const { Navigator, Screen } = createNativeStackNavigator () 
 
 export function AuthRoutes() {
   return (
-    <NavigationContainer >
+    <NavigationContainer 
+      independent={true}
+    >
       <Navigator 
         screenOptions={{
           headerShown: false,
+          headerTransparent: true,
           contentStyle: {
             backgroundColor: "transparent",
-            translucent: true        
           }
         }}
       >
